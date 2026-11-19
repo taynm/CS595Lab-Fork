@@ -2,7 +2,7 @@ use dep::merkle_trees::compute_merkle_root;
 use dep::std::hash::pedersen_hash;
 
 // cannot use generics in main, so must set depth explicitly
-global depth: u32 = 5;
+global depth: u32 = 8;
 
 fn main(
     r: Field, index: Field, hashPath: [Field; depth], root: pub Field, id: pub Field
